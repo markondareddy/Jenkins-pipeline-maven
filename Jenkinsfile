@@ -9,18 +9,18 @@ pipeline {
                 }
             }
         }
-        //stage ('Testing Stage') {
+       stage ('Testing Stage') {
 
-          //  steps {
-            //    withMaven(maven : 'Maven') {
-              //      bat 'mvn test'
-                //}
-            //}
-        //}
-        stage ('Install Stage') {
-            steps {
+          steps {
+             withMaven(maven : 'Maven') {
+              //bat 'mvn test'
+              }
+            }
+        }
+       stage ('Install Stage') {
+           steps {
                withMaven(maven : 'Maven') {
-                    bat 'mvn install'
+                   // bat 'mvn install'
                }
             }
        }
