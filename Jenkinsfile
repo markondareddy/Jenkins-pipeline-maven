@@ -4,19 +4,19 @@ pipeline {
         stage ('Compile Stage') {
 
             steps {
-                withMaven(maven : 'apache-maven-3.6.1') {
+                withMaven(maven : 'Maven') {
                     bat 'mvn clean compile'
                 }
             }
         }
-        stage ('Testing Stage') {
+        //stage ('Testing Stage') {
 
-            steps {
-                withMaven(maven : 'apache-maven-3.6.1') {
-                    bat 'mvn test'
-                }
-            }
-        }
+          //  steps {
+            //    withMaven(maven : 'apache-maven-3.6.1') {
+              //      bat 'mvn test'
+                //}
+            //}
+        //}
         //stage ('Install Stage') {
             //steps {
                // withMaven(maven : 'apache-maven-3.6.1') {
