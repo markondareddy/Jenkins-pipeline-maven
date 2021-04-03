@@ -6,7 +6,7 @@ pipeline {
             steps {
                 // Get some code from a GitHub repository
                 git branch: 'dev',
-                credentialsId: '085f3680-f68a-4665-a8f8-b7dced60dd05',
+                credentialsId: '6ddc111d-f89e-475a-a431-51a8693de3ae',
                 url: 'https://github.com/markondareddy/Jenkins-pipeline-maven.git'
 
                   }          
